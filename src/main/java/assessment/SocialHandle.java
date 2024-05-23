@@ -1,8 +1,6 @@
 package assessment;
 
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
 
 public class SocialHandle {
     private static ArrayList<String> handles = new ArrayList<>();
@@ -25,17 +23,24 @@ return handle;
             handles.add(handle);
         }
     }
-    public void removeHandle(String handle){
+    public String removeHandle(String handle){
      handles.remove(handle);
+        return "@ ";
     }
 
-    public void updateHandle(){
+    public String updateHandle(String updated) {
+        String newHandle = removeHandle(updated);
+        if (!handles.contains(newHandle)) {
+            handles.add(newHandle);
+        }
+//public static int getHandleCount(){
+//        return handles.size();
+//
+//}
+return newHandle;
 
+        public void createFile(){
+
+        }
     }
-public static int getHandleCount(){
-        return handles.size();
-
-}
-
-
 }

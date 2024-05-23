@@ -43,14 +43,22 @@ public class SocialHandlerTest{
     @Test
     @DisplayName("To check if social medial handle removes")
     void removeHandleTest (){
-        //Given
         SocialHandle socialHandle = new SocialHandle();
-        //When
+        String output = socialHandle.removeHandle("@phillygeh");
+        System.out.println(output);
 
-        //Expected
 
     }
+    @Test
+    @DisplayName("To check if social medial handle removes")
+    void updateHandleTest (){
+        SocialHandle socialHandle = new SocialHandle();
+        String output = socialHandle.updateHandle("@phillygeh");
+        output = socialHandle.checkHandle("@hipsdolie");
+        System.out.println((output));
 
+
+    }
 }
 
 
