@@ -53,7 +53,7 @@ public class SocialHandlerTest{
     @DisplayName("To check if social medial handle removes")
     void updateHandleTest (){
         SocialHandle socialHandle = new SocialHandle();
-        String output = socialHandle.updateHandle("@phillygeh");
+        socialHandle.addHandle("@phillygeh");
         output = socialHandle.checkHandle("@hipsdolie");
         System.out.println((output));
 

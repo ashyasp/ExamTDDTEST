@@ -1,5 +1,6 @@
 package assessment;
 
+import java.io.FileWriter;
 import java.util.ArrayList;
 
 public class SocialHandle {
@@ -29,18 +30,22 @@ return handle;
     }
 
     public String updateHandle(String updated) {
-        String newHandle = removeHandle(updated);
+        String newHandle = checkHandle(updated);
         if (!handles.contains(newHandle)) {
             handles.add(newHandle);
         }
-//public static int getHandleCount(){
-//        return handles.size();
-//
-//}
+
 return newHandle;
 
-        public void createFile(){
+        public void createFile(String filename){
+try {
+    FileWriter myWriter = new FileWriter(){
+        for(String handle:handles){
+            myWriter.writer(handle + "\n");
 
+        }
+    }
+}
         }
     }
 }
