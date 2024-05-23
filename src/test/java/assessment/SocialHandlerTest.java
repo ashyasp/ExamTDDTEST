@@ -38,6 +38,16 @@ public class SocialHandlerTest{
     @Test
     @DisplayName("To check if handle was added despite multiple attempts ")
     void addHandleTest(){
+    }
+
+    @Test
+    @DisplayName("To check if social medial handle removes")
+    void removeHandleTest (){
+        //Given
+        SocialHandle socialHandle = new SocialHandle();
+        //When
+
+        //Expected
 
     }
 

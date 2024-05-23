@@ -25,6 +25,13 @@ return handle;
             handles.add(handle);
         }
     }
+    public void removeHandle(String handle){
+     handles.remove(handle);
+    }
+
+    public void updateHandle(){
+
+    }
 public static int getHandleCount(){
         return handles.size();
 
